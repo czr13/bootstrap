@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/小实例/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <style type="text/css">
+        .row div{
+            background: orange;
+            border:1px solid #000;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2">
+                列宽度2格
+                <p>这里是大段的段落文本</p>
+            </div>
+            <div class="clearfix visible-xs">1</div><!--clearfix的作用是，解决高低的问题-->
+            <div class="col-xs-2">列宽2格</div>
+            <div class="col-xs-2">列宽2格</div>
+            <div class="col-xs-2">列宽2格</div>
+            <div class="col-xs-2">列宽2格</div>
+            <div class="col-xs-2">列宽2格</div>
+        </div>
+    </div>
+
+    <!--列偏移-->
+    <div class="container">
+        <div class="row"><!--offset也会占据布局空间，因此使用设计列偏移时，必须把offset偏移宽度与col宽度进行合并计算，确保每一个row中的列宽和偏移宽度之和等于或小于12格-->
+            <div class="col-md-4">列宽4格</div>
+            <div class="col-md-6 col-md-offset-2">列宽6格，偏移2格</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">列宽3格，偏移3格</div>
+            <div class="col-md-3 col-md-offset-3">列宽3格，偏移3格</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1">列宽4格，偏移1格</div>
+        </div>
+    </div>
+</body>
+</html>
