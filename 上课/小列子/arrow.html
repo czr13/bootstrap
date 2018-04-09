@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div.container{
+				margin: 250px auto;
+				text-align: center;
+			}
+			span{
+				margin: 0 auto;
+				/*设置span水平居中*/
+				display: block;
+				width:100px;
+				height: 60px;
+				line-height: 60px;
+				color:white;
+				background-color: green;
+				position: relative;
+			}
+			span:before{
+				/*设置箭头*/
+				content: "";
+				width:0px;
+				border-width: 10px;
+				border-style: solid;
+				border-color:transparent transparent green transparent;
+				/*定位*/
+				position: absolute;
+				left:43%;
+				top:-20px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<span>
+				内容内容
+			</span>
+		</div>
+	</body>
+</html>
