@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		
+	</head>
+	<body>
+		<div class="container">
+			<label for="">
+				<input type="text" placeholder=".input-sm" class="form-control input-sm" />
+			</label>
+			<label for="">
+				<input type="text" placeholder="正常大小" class="form-control" />
+			</label>
+			<label for="">
+				<input type="text" placeholder=".input-lg" class="form-control input-lg" />
+			</label>
+			<button class="input-sm btn btn-success">sm</button>
+			<button class="btn btn-success">normal</button>
+			<button class="input-lg btn btn-success">large</button>
+			<hr />
+			<h2>利用栅格系统，来确定表单元素大小</h2>
+			<div class="row">
+				<div class="col-xs-2">
+					<input type="text" class="form-control" placeholder=".col-xs-2" />
+				</div>
+				<div class="col-xs-4">
+					<input type="text" class="form-control" placeholder="con-xs-4" />
+				</div>
+				<div class="col-xs-6">
+					<input type="text" class="form-control" placeholder="con-xs-6不能使用" disabled="disabled"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+    	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		
+	</head>
+	<body>
+		<div class="container">
+			<input type="checkbox" id="checkbox" class="checkbox-inline"/>
+			<label for="checkbox">复选择框</label>
+			<input type="radio" value="male" id="male" name="gender"class="radio-inline" />
+			<label for="male">男</label>
+			<input type="radio" value="female" id="female" name="gender"
+				class="radio-inline"/>
+			<label for="female">女</label>
+			
+			
+			
+			<hr><!--[if IE]>
+				
+			<![endif]-->
+			
+			
+			
+			<h2>你来自哪个城市</h2>
+			<select name="city" size=4>
+				<optgroup lable="湖北省">
+					<option value="enshi">恩施</option>
+					<option value="huangsan">黄山</option>
+				</optgroup>
+				<optgroup lable="山西省">
+					<option value="taiyuan">太原</option>
+					<option value="yuzhou">僡洲</option>
+					<option value="huanggang">黄网</option>
+				</optgroup >
+			</select>
+			<hr />
+			
+			<h3>用户登录</h3>
+			<form action="" method="post">
+				<label for="username">用户名：</label>
+				<input type="text" id="username" />
+				<label for="userps">密码：</label>
+				<input type="password" id="userps" />
+				<label for="vali">验证码：</label>
+				<input type="text" id="vali" />
+				<img src="img/im.jpg" style="height:30px;width:70px;"/>
+				<lable for="keeplogin">
+					<input type="checkbox" name="keeplogin" id="keeplogin" value="" />
+				</lable>
+				<button type="submit" class="btn btn-primary">登录</button>
+				<a href="#">用户注册</a>
+			</form>
+			<hr />
+			说明：
+			1.我们可以向父form元素添加role="form" role作用
+			2.我们把表单的控件和标签放到一个使用了，.form-group的div中，
+				作用：获取表单元素之间的最佳间距,margin-botton:15px;
+			3.向所有的文本元素input textarea select 添加.form-control,
+			    作用:设置元素的宽度为100%
+			
+			<h3>基础表单</h3>
+			<div class="form-group">
+				<label for="username1">用户名：</label>
+				<input type="text" id="username1"  class="form-control"/>
+			</div>
+			<div class="form-group">
+				<label for="userps1">密码：</label>
+				<input type="text" id="userps1" placeholder="请输入密码" class="form-control4" />
+			</div>
+		</div>
+	</body>
+</html>
