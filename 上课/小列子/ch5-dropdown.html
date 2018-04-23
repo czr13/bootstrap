@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+    	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		
+	</head>
+	<body>
+		<!--drop:下落，down下-->
+		<!--bootstrap可以做：下拉菜单，选项卡，缩略图，字体等等
+		使用bootstrap的组件的步骤：
+			1，引入bootstrap.min.css;
+			2,引入Jquery.js  因为bootstrap.min.js使用了jq
+			4,引入bootstrap.min.js-->
+			
+		<div id="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="dropdown">
+						<!--类似于class="btn" 声明是下拉菜单，作用：相对定位
+							position:relative;
+						-->
+						<!--链接：下拉菜单触发器-->
+						<!--在激活的触发器a上写自定义属性：data-toggle:dropdown-->
+						<a href="#" class="btn btn-success btn-lg" data-toggle="dropdown">激活按钮
+							<i class="caret"></i>
+						</a>
+						<!--下拉菜单-->
+						<ul class="dropdown-menu">
+							<li><a href="#">菜单项1</a></li>
+							<li><a href="#">菜单项2</a></li>
+							<li><a href="#">菜单项3</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					1
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					2
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					3
+				</div>
+			</div>
+		</div>
+	
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
