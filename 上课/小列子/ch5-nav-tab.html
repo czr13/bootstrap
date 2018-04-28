@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+    	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style>
+			.tab-pane img{
+				width:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div>
+					<!--tabs选项卡部分-->
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">首页</a></li>
+						<li><a href="#tab2" data-toggle="tab">微客</a></li>
+						<li><a href="#tab3" data-toggle="tab">微博</a></li>
+					</ul>
+					<!--tabs内容区部分-->
+					<div class="tab-content">
+						<div class=" tab-pane active" id="tab1">
+							<img src="img/dog.jpg" />
+						</div>
+						<div class="tab-pane" id="tab2">
+							<img src="img/im.jpg"/>
+						</div>
+						<div class="tab-pane" id="tab3">
+							<img src="img/dog.jpg"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
