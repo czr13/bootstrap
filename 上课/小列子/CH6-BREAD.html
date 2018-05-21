@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h2>面包屑导航:应用.breadcrumb</h2>
+				<ul class="breadcrumb">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">新闻频道</a></li>
+					<li><a href="#">国内新闻</a></li>
+					<li>新闻详情页</li><!--因为是当前的所以不需要链接-->
+				</ul>
+			</div>
+			<div class="row">
+				<h2>分页组件:页page  .pagination 标页码</h2>
+				<h3>标准分页组件：.pagination</h3>
+				<ul class="pagination">
+					<li><a href="#">上一页</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<!--.disable为不可点击页面-->
+					<li class="disabled"><a href="#">3</a></li>
+					<!--.active为当前页-->
+					<li class="active"><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">下一页</a></li>
+				</ul>
+				
+				<h3>大号分页组件：.pagination-lg</h3>
+				<p>首先将列表转化为分页组件，然后再设置大小</p>
+				<ul class="pagination pagination-lg">
+					<li><a href="#">上一页</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li> 
+					<li><a href="#">6</a></li>
+					<li><a href="#">下一页</a></li>
+				</ul>
+				
+				<h3>小号分页组件：.pagination-sm</h3>
+				<ul class="pagination pagination-sm">
+					<li><a href="#">上一页</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">下一页</a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<h2>翻页组件：利用.pager 实现"上一页"，“下一页：”</h2>
+				<ul class="pager">
+					<li class="previous"><a href="#">上一页</a></li><!--也可以用pull-right 与pull-left使得向左向右-->
+					<li class="next"><a href="#">下一页</a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<h2>标签laber和徽章badge</h2>
+				<span class="label label-primary">标签样式</span>
+				<span class="badge">徽章样式</span>
+				<h3>标签label的附加标签样式</h3>
+				<span class="label label-default">default</span>
+				<span class="label label-info">info</span>
+				<span class="label label-danger">danger</span>
+				<span class="label label-success">success</span>
+				<span class="label label-primary">primary</span>
+				<span class="label label-warning">warning</span>
+				
+				<h3>徽章在胶囊式导航中的应用</h3>
+				<ul class="nav nav-pills nav-stacked">
+					<!--nav-stacked垂直导航样式-->
+					<li class="active"><a href="#"><span class="badge pull-right">12</span>链接</a></li>
+					<li><a href="#">链接<span class="badge pull-right">30</span></a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="navbar navbar-default">
+					<!--导航条的品牌-->
+					<div class="navbar-header">
+						<a href="#" class="navbar-brand">教研网</a>
+					</div>
+					<!--导航条的导航-->
+					<ul class="nav navbar-nav">
+						<!--.nav消除列表前面的引导符号-->
+						<!--.navbar-nav的作用是实现li的左浮动,所有的 li在同一行-->
+						<li><a href="#">首页</a></li>
+						<li><a href="#">音乐<span class="label label-danger">NEW</span></a></li>
+						<li><a href="#">图片<span class="label label-primary">NEW</span></a></li>
+						<li><a href="#">视频<span class="label label-info">NEW</span></a></li>
+						<li><a href="#">地图<span class="label label-warning">NEW</span></a></li>
+						<li><a href="#">文库</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

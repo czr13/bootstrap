@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <style type="text/css">
+        	.father{
+        		width:550px;
+        		height: 500px;
+        		border:1px solid #0000;
+        		margin: 0 auto;
+        		background: orange;
+        		text-align: center;
+        		line-height: 500px;
+        		display: table;
+        		
+        	}
+        	.son{
+        		display: table-cell;
+        		vertical-align: middle;
+        	}
+        </style>
+		
+	</head>
+	<body>
+		<h2>多行文本垂直居中问题?</h2>
+		<p>将父div转换为table，子div转化为table-cell单元格，然后再单元格中使用vertical-align:middle，就可以实现多行文本的垂直居中的</p>
+		<div class="father">
+			<div class="son">
+				doegeghjeojhgehjplaiegjingqoedoegeghjeojhgehjplaiegjingqoedoegegh<br>jeojhgehjplaiegjingqoedoegeghjeojhgehjplaiegjingqoedoegeghjeojhgehjplaiegjingqoedoegeghjeojhgehjplaiegjingqoe
+			</div>
+		</div>
+	</body>
+</html>

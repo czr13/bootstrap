@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+    	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h2>警告框，使用.alert类可以设计警告框组件</h2>
+				<div class="alert alert-danger">
+					<button type="tutton" class="close" data-dismiss="alert">&times;</button>
+					<strong>警告，确定要删除当前信息？</strong>
+				</div>
+				<div class="alert alert-success">
+					<button type="tutton" class="close" data-dismiss="alert">&times;</button>
+					<strong>警告，确定要删除当前信息？</strong>
+				</div>
+				<div class="alert alert-warning">
+					<button type="tutton" class="close" data-dismiss="alert">&times;</button>
+					<strong>警告，确定要删除当前信息？</strong>
+				</div>
+				<div class="alert alert-info">
+					<button type="tutton" class="close" data-dismiss="alert">&times;</button>
+					<strong>警告，确定要删除当前信息？</strong>
+				</div>
+				<h2>实现交互的自定义属性</h2>
+				<ul>
+					<li>data-toggle="dropdown" 通过下拉菜单实现切换</li>
+					<li>data-toggle="tab" 通过tab选项卡实现切换</li>
+					<li>data-dismiss="alert" 通过alert警告框实现切换</li>
+					<li>toggle：切换，dismiss:解雇，解散</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="alert alert-warning alert-dismissable">
+					<a href="#" class="close" data-dismiss="alert">&times;</a>
+					<b>警告：确定删除当前消息</b>
+				</div>
+			</div>
+			<div class="row">
+				<h2>警告框中的链接使用.alert-link类</h2>
+				<div class="alert alert-danger alert-dismissable">
+					<a href="#" class="close" data-dismiss="alert">&times;</a>
+					<a href="#" class="alert-link">成功</a>
+				</div>
+				<div class="alert alert-warning alert-dismissable">
+					<a href="#" class="close" data-dismiss="alert">&times;</a>
+					<a href="#" class="alert-link">成功</a>
+				</div>
+				<div class="alert alert-success alert-dismissable">
+					<a href="#" class="close" data-dismiss="alert">&times;</a>
+					<a href="#" class="alert-link">成功</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js" ></script>
+	
+	</body>
+</html>
