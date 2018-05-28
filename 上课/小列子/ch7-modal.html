@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h2>Data-自定义属性制作模态框i:模态modal</h2>
+				<p>data-toggle="切换方式：modal"</p>
+				<p>data-toggle="目标div的id:#myModal"</p>
+				<!--模态框的触发器-->
+				<button class="btn btn-success" data-toggle="modal" data-target="#myModal">
+					打开模态框
+				</button>
+				<div>
+					<!--的模态框-->
+					<div id="myModal" class="modal fade">
+						我们的模态框 ：Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ullam optio blanditiis eveniet animi libero quam totam accusantium minima repellat expedita asperiores quia accusamus deserunt voluptatibus atque debitis aliquam consequatur.
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h2>通过js调用模态框</h2>
+				<!--触发器-->
+				<button class="btn btn-danger" >
+					打开模态框
+				</button>
+				<!--模态框的内容-->
+				<div id="myModal2" class="modal fade">
+					第二个模态框架Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur magni architecto quasi quidem dolores quo velit beatae possimus eaque facere non ipsa laborum repudiandae molestiae sunt illum ea aperiam ducimus.
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js" ></script>
+	<script>
+		$(function(){
+			$(".btn-danger").click(function(){
+				$("#myModal2").modal();
+				
+			})
+		})
+	</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h2>控制模态框</h2>
+				<a href="#myModal" class="btn btn-success" >弹出模态框</a>
+				<!--模态框-->
+				<div class="modal" id="myModal" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<!--头部-->
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">X</button>
+							</div>
+							<!--正文-->
+							<div class="modal-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis aspernatur eos similique cumque nemo illum ut ea aliquid sed optio officiis inventore eum. Quidem modi nihil voluptatem ratione provident autem!</p>
+							</div>
+							<!--footer-->
+							<div class="modal-footer">
+								<button class="btn btn-success" data-dismiss="modal">关闭模态框</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js" ></script>
+	<script type="text/javascript">
+		$(".btn").click(function(){
+			$("#myModal").modal('toggle');
+		});
+		$("#myModal").modal({
+			backdrop:false,
+			keyboard:true,
+			show:true,
+		})
+	</script>
+</html>
