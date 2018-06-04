@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<style type="text/css">
+			img{
+				width:100%;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h2>设计折叠效果的步骤</h2>
+				<ol>
+					<li>导入js脚本文件和css文件</li>
+					<li>设计折叠的包含框,.panel-group定义，设计ID</li>
+					<li>设计折叠选项面板</li>
+					<li>利用锚点连接，捆绑标题和内容在一起</li>
+					<li>激活折叠的交互</li>
+				</ol>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<!--折叠的包含框-->
+					<div class="panel-group" id="accordion">
+							<!--面板-->
+						<div class="panel panel-default">
+							<!--面板的标题-->
+							<div class="panel-heading">
+								<h4>
+									<a href="#collapse1" data-toggle="collapse" data-parent="#accordion">小花</a>
+								</h4>
+							</div>
+							<!--面板的内容-->
+							<div id="collapse1" class="panel-collapse collapse">
+								<div class="panel-body">
+									<img src="img/6.jpg"/>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<!--面板的标题-->
+							<div class="panel-heading">
+								<h4>
+									<a href="#collapse2" data-toggle="collapse" data-parent="#accordion">百合</a>
+								</h4>
+							</div>
+							<!--面板的内容-->
+							<div id="collapse2" class="panel-collapse collapse">
+								<div class="panel-body">
+									<img src="img/7.jpg"/>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<!--面板的标题-->
+							<div class="panel-heading">
+								<h4>
+									<a href="#collapse3" data-toggle="collapse" data-parent="#accordion">水仙花</a>
+								</h4>
+							</div>
+							<!--面板的内容-->
+							<div id="collapse3" class="panel-collapse collapse">
+								<div class="panel-body">
+									<img src="img/2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js" ></script>
+</html>

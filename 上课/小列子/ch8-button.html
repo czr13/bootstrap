@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h2>模拟复选框组</h2>
+				<p>利用data-toggle="button-checkbox"将普通按钮转化为多选，不推荐</p>
+					<div class="btn-group" data-toggle="button-checkbox">
+						<button class="btn btn-primary btn-lg" type="button">语文</button>
+						<button class="btn btn-primary btn-lg" type="button">数学</button>
+						<button class="btn btn-primary btn-lg" type="button">英语</button>
+					</div>
+			</div>
+			<div class="row">
+				<h2>利用复选框和data-toggle="buttons"制作复选框组</h2>
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-primary btn-lg">
+						<input type="checkbox" />语文
+					</label>
+					<label for="" class="btn btn-primary btn-lg">
+						<input type="checkbox" />数学
+					</label>
+					<label for="" class="btn btn-primary btn-lg">
+						<input type="checkbox" />英语
+					</label>
+				</div>
+			</div>
+			<hr>
+			
+			<div class="row">
+				<h2>模拟单选框组</h2>
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-primary btn-lg">
+						<input type="radio" name="xb" id="xb01"/>男
+					</label>
+					<label for="" class="btn btn-primary btn-lg">
+						<input type="radio" name="xb" id="xb02"/>女
+					</label>
+				</div>
+			</div>
+			<div class="row">
+				<button class="btn btn-primary btn-lg btn-block" data-loading-text="正在加载...">加载</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js" ></script>
+	<script type="text/javascript">
+		$(".btn-block").click(function(){
+			$(this).button("loading");
+		})
+	</script>
+</html>
