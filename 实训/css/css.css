@@ -1,0 +1,98 @@
+
+
+
+#banner { padding-top: 70px; 
+}
+#banner .img{
+	width:100%;
+}
+
+
+.product-box p{
+	line-height: 1.8em;
+	text-indent: 2em;
+}
+.produce-box{
+	margin-bottom: 35px;
+	margin-top:30px;
+}
+
+.skill-home span{
+	font-size: 42px;
+	color:#e48907;
+	text-anchor: center;
+	padding: 36px 0 14px 0;
+	
+}
+
+.skill-home h3{
+	font-size: 20px;
+	font-weight: 600;
+}
+.skill-home a{
+	color:#AC2925;
+}
+.skill-home .iconfont{
+	color:#AFD9EE;
+}
+.skill-home p{
+	line-height: 1.8em;
+}
+/*设置鼠标移动到矩形区域的hover效果*/
+.skill-home .box:hover{
+	background-color:#AFD9EE;
+	color:white;
+	cursor:pointer
+}
+/*设置鼠标移动到矩形区域以后字体图标的效果*/
+.skill-home .box:hover .iconfont{
+	color:#fff;
+}
+.skill-home .box{
+	border:1px solid #ccc;
+}                   
+
+
+/*关于我们部分代码*/
+.aboutus img{
+	width:100%;
+}
+.aboutus{
+	padding: 50px 0 10px ;
+	background-color:#f5f5f5;
+}
+.aboutus p{
+	line-height: 2em;
+	text-indent: 34px;
+}
+
+/*音乐切换部分代码*/
+
+#musicPlayer{
+	width:100%;
+}
+.glyphicon{
+	cursor: pointer;
+}
+#musicImg{
+	margin:auto;/*让图片居中*/
+	animation: imgRotate 8s linear infinite;/*使图片无限循环转动*/
+	animation-play-state: paused;/*暂停动画*/
+}
+
+/*定义旋转的关键帧动画*/
+@keyframes imgRotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+/*脚部代码*/
+footer p{
+	height: 50px;
+	margin-top:20px;
+	line-height: 50px;
+}
